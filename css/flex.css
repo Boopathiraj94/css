@@ -1,0 +1,40 @@
+section{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section>.box{
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 280px;
+    margin: 20px 20px;
+    transition: 0.5s;
+    transform: rotate(20deg);
+}
+section>.box:hover{
+    box-shadow: 4px 9px 12px 6px #0000006b;
+    border-radius: 20px;
+    transform: rotate(0deg);
+    
+}
+section .box .box-img{
+    /* border: 5px solid rgb(18, 84, 73); */
+    height: 200px;
+}
+
+section .box .box-img img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+section .box .box-footer{
+    /* border: 3px solid olivedrab; */
+    /* height: 50px; */
+}
+
+section .box .box-footer p{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}

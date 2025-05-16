@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+</head>
+<body>
+   <!-- 
+    
+   pseudo elements
+
+ 
+   Syntax:
+
+   selector::pseudoelements{
+    //code;
+   }
+
+   * Style the first line , first letter
+   * insert the content before or after an element
+   * Style the markers of the list items
+   * selections
+   
+first letter
+==============
+     /* h1::first-letter{
+            color: rebeccapurple;
+            background-color: aqua;
+        }
+first line ,
+===============
+        p::first-line{
+            color: blue;
+            background-color: brown;
+        } */
+
+   ::before & ::after
+   ==================
+   prerequest
+   ===================
+   content perperty
+
+   syntax:
+   content : url()
+   content : "";
+
+    h1::before{
+                content: "hi";
+                color: red;
+        }
+        h2::after{
+            content: " welcome ";
+            color: blueviolet;
+        }
+        h3::after{
+            /* content: url('images/thumb3.jpg'); */
+            content: "😍👌👌👍👌";
+            /* display: inline-block;
+            width: 2%; */
+           
+        }
+   -->
+
+   <style>
+        /* h1::first-letter{
+            color: rebeccapurple;
+            background-color: aqua;
+        }
+        p::first-line{
+            color: blue;
+            background-color: brown;
+        } */
+
+        h1::before{
+                content: "hi";
+                color: red;
+        }
+        h2::after{
+            content: " welcome ";
+            color: blueviolet;
+        }
+        h3::after{
+            /* content: url('images/thumb3.jpg'); */
+            content: "😍👌👌👍👌";
+            /* display: inline-block;
+            width: 2%; */
+           
+        }
+        /* 
+        Marker is used to change the list items bullet points
+        Ex:
+        */
+        ::marker{
+            content: "✌";
+            color: blue;
+             
+        }
+        /* 
+        selection
+        ===========
+            when mouse select the content then shown the colors
+        */
+        p::selection{
+            background-color: palegreen;
+            color: purple;
+        }
+
+        .para2::selection{
+            background-color: rgb(244, 251, 152);
+            color: rgb(6, 0, 128);
+        }
+   </style>
+
+   <h1>Arul</h1>
+
+   <h2>Arul raj</h2>
+
+   <h3>SIva</h3>
+
+   <ul>
+    <li>HI</li>
+    <li>hello</li>
+    <li>welcome</li>
+   </ul>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dolores. Culpa itaque debitis repudiandae, reiciendis porro ab excepturi odit, ut dicta architecto quos officiis vel temporibus exercitationem minima saepe accusantium.</p>
+
+   <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dolores. Culpa itaque debitis repudiandae, reiciendis porro ab excepturi odit, ut dicta architecto quos officiis vel temporibus exercitationem minima saepe accusantium.</p>
+
+</body>
+</html>

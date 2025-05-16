@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>CSS Pseudo classess</h1> -->
+<!-- 
+ :first-child 
+  this is used matchaes a specifed element that is the first child of the 
+  another element 
+
+  ex:
+     p:first-child{
+       color:red;
+     }
+       =====================
+
+       opacity
+       =======
+        THis is used to specifies the transparency of an element
+
+        property:
+        ==========
+           opacity: 
+           starting point => 0
+           ending point => 1
+
+            in between 0 ,0.1,0.2,0.3,0.4,0.5,0.6,.....0.9, 1
+
+            by Default opacity is 1
+                  Ex:
+                  ====
+                    img{
+                     opacity: 0.3;
+                    }
+                    img:hover{
+                        opacity: 1;
+                    }
+=====================================
+z-index
+======
+
+   This property used to stack order of an element
+
+   when elements are positioned, it can be overlap other element
+   Z-index values -1 , 1, .....99999
+   
+   Example:
+   =========
+     .im1{
+
+    position: absolute;
+    top: 0;
+  
+    z-index: 33;
+  }
+-->
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque et, voluptas ducimus cumque molestias error, ea dicta pariatur quidem tempore laborum reprehenderit, excepturi cum. Iste qui asperiores voluptates! Eaque similique dicta repellat aperiam assumenda aspernatur iure id magnam reiciendis et, illum deleniti eum eos! Recusandae distinctio sunt maxime tempore iste.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque et, voluptas ducimus cumque molestias error, ea dicta pariatur quidem tempore laborum reprehenderit, excepturi cum. Iste qui asperiores voluptates! Eaque similique dicta repellat aperiam assumenda aspernatur iure id magnam reiciendis et, illum deleniti eum eos! Recusandae distinctio sunt maxime tempore iste.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque et, voluptas ducimus cumque molestias error, ea dicta pariatur quidem tempore laborum reprehenderit, excepturi cum. Iste qui asperiores voluptates! Eaque similique dicta repellat aperiam assumenda aspernatur iure id magnam reiciendis et, illum deleniti eum eos! Recusandae distinctio sunt maxime tempore iste.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque et, voluptas ducimus cumque molestias error, ea dicta pariatur quidem tempore laborum reprehenderit, excepturi cum. Iste qui asperiores voluptates! Eaque similique dicta repellat aperiam assumenda aspernatur iure id magnam reiciendis et, illum deleniti eum eos! Recusandae distinctio sunt maxime tempore iste.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque et, voluptas ducimus cumque molestias error, ea dicta pariatur quidem tempore laborum reprehenderit, excepturi cum. Iste qui asperiores voluptates! Eaque similique dicta repellat aperiam assumenda aspernatur iure id magnam reiciendis et, illum deleniti eum eos! Recusandae distinctio sunt maxime tempore iste.
+
+
+  </p>
+
+  <img class="im1" src="images/vijay-is-all-set-to-launch-his-own-tv-channel_b_1112241259.jpg" alt="" width="400">
+
+  <img  class="im2"  src="images/2a0797046757029d961f00f3bf353229.jpg" alt="" width="400">
+  <!-- <p>Lorem  2</p>
+  <p>Lorem 3</p>
+
+  <div>
+    <p>Lorem  4</p>
+    <p>Lorem5</p>
+    <p>Lorem 6</p>
+  </div> -->
+
+
+
+
+
+    <!-- 
+    a , unvisited , visited, hover , active, 
+
+    By Default=> 
+
+         a - unvisited -blue
+         a - visited -purple
+         a - active - red
+
+     A pseudo classess is used to define a special state of an element
+
+     *. Style an element when a user moves the mouse over it
+     * Style visited and unvisited link 
+     * style an element when its focus
+     * style valid , invalid, required , optional // form
+
+     Unvisited
+     =========
+      a:link{
+         color:pink;
+      }
+
+      visited
+      ===========
+      a:visited{
+         color:green;
+      }
+
+     mouse hover (over):
+     ================
+     a:hover{
+        color:blue;
+     }
+    Active
+    ======
+    a:active{
+       color:yellow;
+    }
+
+    MUST Follow:
+    ===========
+      a:hover must comes after the a:link and a:visited
+      a:active must comes after a:hover 
+
+      not case sensitive
+
+    
+    -->
+
+    <!-- <a href="#">HOME</a>
+    <a href="##">HOME</a> -->
+
+</body>
+</html>

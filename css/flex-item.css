@@ -1,0 +1,50 @@
+section{
+    border: 2px solid;
+    display: flex;
+    height: 200px;
+}
+
+section div{
+    border: 2px solid red;
+}
+.box{
+
+    align-self: center;
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: normal; */
+
+    /* align-self: baseline; */
+
+     width: 100px;
+    /* height: 200px; */
+    background: pink;
+    color: black;
+    
+    transition: 1s;
+    /* overflow: hidden; */
+}
+.box1{
+    /* order: 4; */
+    
+}
+
+.box2{
+    /* background: green; */
+    /* flex-grow:8; */
+}
+.box3{
+    /* background: gold; */
+    /* flex-grow: 3; */
+}
+
+.box4{
+    /* background: rgb(5, 99, 100); */
+    /* flex-grow: 3; */
+}
+
+.box:hover{
+    /* background: teal; */
+    /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+}

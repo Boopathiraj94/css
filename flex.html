@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+        }
+
+        .box{
+            border: 4px solid green;
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 40px;
+        }
+
+        /* h1,h2,h5{
+            border:2px solid rgb(72, 0, 255);
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        flex => flexible
+        flexbox
+        ===========
+         We can easyly flexible the box layout moudule
+         *. we can arranging the items in rows or columns
+
+         Components
+         ============
+         Flex container ,Flex items
+
+         Flex container=> The parent element (container)
+         Flex item => Inside the container (elements) this is called flex items
+    
+         div is block level element (full width or fixed width)
+         h1 - h6 => block level
+
+         property:
+         display:flex;
+
+         flex-direction => row ; by default
+                        : row-reverse;
+                        :column;
+                        :column-reverse;
+
+        flex-wrap:
+        ============
+         This property specify whether the flex items should wrap or not,
+
+         * If there is not enough space for them it will wrap the flex items
+         property
+         flex-wrap: nowrap: by default
+                : wrap;
+                :wrap-reverse
+
+        
+
+    -->
+
+    <div class="container">
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+            3
+        </div>
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+            3
+        </div>
+
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+            3
+        </div>
+
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+            3
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit hic, ducimus corrupti minima a nesciunt error qui labore quo provident explicabo reiciendis officia delectus doloribus maiores aut, eius deleniti illo.</p>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- 
+    CSS Transform (2D)
+    =============
+      This property allow you to move , rotate, scale (zoom in ,out)
+      and skew (shirink) in html elements
+    
+      transform property
+      ======================
+        1. translate(),translateX(),translateY() - move
+        2.rotate()
+        3. scaleX()
+        4.scaleY()
+        5.scale()
+        6.skew() , skewX(), skewY()
+        7.matrix()
+
+        1. translate() -move
+        ===============
+           This function moves an element from its current
+            position
+(according x-axis and y-axis)
+
+    div{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            /* transform: translateX(100px); */
+            transition: all 0.5s;
+        }
+
+        div:hover{
+            /* transform: translateX(200px); */
+    transform:  translateX(500px) ;
+            /* transform: translateY(200px); */
+            /* transform: translate(200px,200px); */
+        }
+    2. rotate()
+    ==============
+       This is used to rotate the elements
+       by useing degree
+
+       0deg - 360 deg
+       transform: rotate(90deg);
+
+       =========================
+
+    3.scale() - zoom in, out
+    ==========================
+     this function is used to zoom in and zoom out in the 
+     elements
+ 
+    div{
+       width:100px;
+       height:100px;
+       scaleX(2); // width
+    }
+
+    scaleX(2) => already width 100px  => 100 x 2 = 200px 
+    scaleY(2) => already height 100px  => 100 x 2 = 200px 
+    scaleX(2,2) => already width x height => 100 x 2  =200px
+                                            100 x 2 = 200px
+
+    scaleX(0.5,0.5)
+       100 x 0.5 => 50px
+       100 x 0.5 => 50px
+
+-->
+
+<style>
+    div{
+        border: 2px solid red;
+        width: 300px;
+        height: 200px;
+        margin: 50px 50px;
+        overflow: hidden;
+        /* transform: translateX(100px); */
+        float: left;
+    }
+
+    div img{
+        width: 100%;
+        height: 100%;
+        /* opacity: 0.5; */
+        object-fit: cover;
+        transition: all 0.5s;
+    }
+
+   img:hover{
+    transform: rotate(360deg);
+        /* transform: scaleX(2); */
+        /* transform: scaleY(0.5); */
+        /* transform: scale(0.5,0.5); */
+        /* transform: translateX(200px); */
+  /* transform:  translateX(500px) rotate(180deg); */
+        /* transform: translateY(200px); */
+        /* transform: translate(200px,200px); */
+    }
+
+    /* .fa{
+        color: blue;
+        font-size: 50px;
+        transition: 0.5s;
+    }
+    .fa:hover{
+        transform: rotate(90deg);
+    } */
+</style>
+
+      <div>
+         <img src="images/HD-wallpaper-thalapathy-67-actor-vijay-actor-vijay-leo-movie-thumbnail.jpg" alt="">
+      </div>
+
+      <div>
+        <img src="images/HD-wallpaper-thalapathy-67-actor-vijay-actor-vijay-leo-movie-thumbnail.jpg" alt="">
+     </div>
+
+
+     <div>
+        <img src="images/HD-wallpaper-thalapathy-67-actor-vijay-actor-vijay-leo-movie-thumbnail.jpg" alt="">
+     </div>
+
+     <div>
+        <img src="images/HD-wallpaper-thalapathy-67-actor-vijay-actor-vijay-leo-movie-thumbnail.jpg" alt="">
+     </div>
+
+      <!-- <i class="fa fa-bell" aria-hidden="true"></i> -->
+
+</body>
+</html>

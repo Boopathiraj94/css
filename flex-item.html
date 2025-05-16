@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex - items</title>
+
+    <link rel="stylesheet" href="css/flex-item.css">
+</head>
+
+<body>
+    <!--
+     flex items
+     ===========
+       The direct child elements of  a flex container flext items
+
+       Here , we add the below properties in flex items
+
+           1. order 
+           2. flex-grow
+           3. flex-shrink
+           4. flex-basis
+           5. flex - shorthand
+           6. align-self
+
+    1. order
+    ========
+        we can change the order(position) of the flex items
+        property => order : 1;
+         1,2,3,4
+         4,2,3,1
+
+    2. flex-grow
+    ============
+        This is used to grow the flex items 
+        property
+        flex-grow:1;
+        values => 1 - 8
+
+        by default, 0
+
+    3. flex-shrink
+    =============
+            This is used to shirnk the rest of the flex items
+
+      * we need to increase the flex items
+      by default value is 1
+      property
+      flex-shrink: 0
+
+    4. flex-basis
+    ===============
+     This is used to set the initial length of the flex items
+
+     property
+     flex-basis: 500px
+
+    5. flex (shorthand)
+    ===========
+    property
+    ========
+      flex: 2 0 400px;
+
+      1 -> flex-grow
+      2 -> flex-shrink
+      3 -> flex-basis
+
+    6. align-self
+    ============
+        This is used to  align the flex items itself
+
+    property
+        align-self
+
+    values
+        auto | stretch| flex-start | flex-end |
+        baseline | center
+    ** we need increase the height of the flex containter
+
+    by default => align-self: stretch
+        align-self: center;
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: normal; */
+
+    /* align-self: baseline; */
+
+
+
+    -->
+
+    <section>
+        <div class="box box1">
+          1
+        </div>
+        <div class="box box2">
+            2
+         </div> 
+    </section>
+</body>
+
+</html>

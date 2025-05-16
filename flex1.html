@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <!-- 
+    
+    flex
+
+    justify-content
+    ==============
+    THis is used to align the flex items in main-axis
+    (horizontal) x-axis
+
+    Note: if the space is available then only align 
+    main-axis
+
+    property:
+    we can use it in a flex - container
+    justify-content: center
+                  : flex-start  - by default
+                  : flex-end
+                  : space-around
+                  : space-between
+                  : space-evenly
+    
+    -----------------------------------------
+    align-items:
+     This is used to align the flex items in cross-axis (vertical) y-axis
+
+
+     align-items
+     ==========
+     align-items:center
+                : flex-start
+                : flex-end
+                :stretch
+                : baseline
+                :normal
+                :center
+
+     Note: if the space is available then only align 
+    cross-axis
+    * we must add the height container 
+
+    align-items: stretch;
+     align-items: baseline;
+    *** we should not add the height in flex items ***
+
+    how to center the flex item in flex container
+
+    section{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    align-content:
+    =============
+     This is also same like a align item
+
+     align-content  : center
+                    : stretch
+                    : flex-start
+                    : flex-end
+                    : space-between
+                    : space-around
+                    : space-evenly
+
+    ***flex-wrap  we can use it***
+    -->
+<style>
+      section{
+        border: 2px solid;
+        display: flex;
+        background-color: pink;
+        height: 300px;
+        /* justify-content: center; */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: normal; */
+        /* align-items: stretch; */
+ 
+        /* align-items: center;  */
+        flex-wrap: wrap;
+        /* align-content: center; */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: space-between; */
+
+        /* align-content: space-around; */
+        align-content: space-evenly;
+
+      }
+
+      .box{
+        border: 2px solid palegreen;
+        width: 50px;
+        height: 50px;
+        background-color: gold;
+        color: blue;
+        font-size: 30px;
+      }
+
+</style>
+
+    <section>
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+           3
+        </div>
+        <div class="box">
+            4
+        </div>
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+           3
+        </div>
+        <div class="box">
+            4
+        </div>
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+           3
+        </div>
+        <div class="box">
+            4
+        </div>
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+           3
+        </div>
+        <div class="box">
+            4
+        </div>
+    </section>
+
+</body>
+</html>

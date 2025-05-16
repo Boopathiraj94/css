@@ -1,0 +1,60 @@
+/* unvisited link */
+a:link{
+    color: palevioletred;
+}
+/* visited link */
+a:visited{
+   /* color:teal;  */
+}
+/* mouse hover */
+a:hover{
+    /* color: brown; */
+}
+
+h1:hover{
+    color: goldenrod;
+}
+
+/* active (selected) colors */
+
+a:active{
+    color: forestgreen;
+}
+
+
+/* p:first-child{
+    color:red;
+  } */
+
+  p{
+     /* opacity: 0.3; */
+     font-size: 30px;
+  }
+
+  p:hover{
+     opacity: 1;
+  }
+
+  .im1{
+
+    position: absolute;
+    top: 0;
+  
+    z-index: 33;
+  }
+  .im2{
+
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  p{
+
+  }
+
+  /* img{
+     opacity: 0.3;
+  }
+  img:hover{
+    opacity: 1;
+  } */
