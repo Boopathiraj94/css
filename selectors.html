@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selectors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>selectors</h1>
+
+    <!-- 
+     Category
+     =======
+     1. element name (selectors) ex (h1,p,img,a)
+     2. group selector 
+     ex
+     ==
+     h1,p,h2,h5{
+            background-color: bisque;
+        }
+
+    3. universal selector ex: * 
+    4. class selector 
+
+
+    -->
+
+
+    <h1 class="theme-clr">Surendhar</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusamus nisi maxime rem, veniam assumenda autem repellat necessitatibus ipsa delectus aut! Est facere, animi blanditiis quia possimus nostrum! Neque, ipsa.</p>
+
+    <h2 class="theme-clr">SDLC</h2>
+    <h5 class="theme-clr">SDLC</h5>
+
+    <p id="surendhar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate placeat explicabo eius, commodi obcaecati voluptas et, quia recusandae ullam pariatur odit voluptatem. Quaerat, recusandae. Incidunt ullam doloremque rem dignissimos quae.</p>
+
+    <p id="surendhar2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate placeat explicabo eius, commodi obcaecati voluptas et, quia recusandae ullam pariatur odit voluptatem. Quaerat, recusandae. Incidunt ullam doloremque rem dignissimos quae.</p>
+
+
+
+
+    <!-- 
+    
+    Simple Selectors:   - used to target specific HTML elements for style
+These include selecting by: 
+1.	element name (e.g., h1)
+2.	class (.class-Name)
+3.	ID (#id-Name)
+4.	universal (* for all elements).
+5.	Grouping selectors (h1,p,ul)
+Element Selectors (h1):  The element selector selects HTML elements based on the element name.
+Ex: h1, p, ul, li …. Etc.
+p {
+  	text-align: center;
+  	color: red;
+}
+Class Selectors(.):  The class selector selects HTML elements with a specific class attribute.
+ write a period (.) character, followed by the class name.
+Ex:
+<h1 class="center   large">Red and center-aligned heading</h1>
+.center {
+  		text-align: center;
+  		color: red;
+}
+.large{
+	Font-size:55px;
+}
+ID Selectors (#):   -  The class selector selects HTML elements with a specific id attribute.
+ write a period (#) character, followed by the id name.
+Ex:
+<h1 id="bg-color ">Red and center-aligned heading</h1>
+#bg-color {
+ 	background-color:red;	  		
+}
+** The id of an element is unique within a page, so the id selector is used to select one unique element! **
+Class vs ID selectors
+•	Class Selector (.):  Targets elements with a specified class attribute, allowing multiple elements to share the same styling.
+•	ID Selector (#): Targets a single element with a unique ID attribute, ensuring that styles are applied to one specific element on the page.
+-----------------------------------------------------------------------------------------
+ Universal Selector (*): Selects all elements on the page and applies the same style universally. 
+
+  Ex:
+
+* {
+  text-align: center;
+  color: blue;
+}
+------------------------------------------------------------------------------------------------
+Group selectors (,):  The grouping selector selects all the HTML elements with the same style definitions. 
+  
+
+    
+h1,p,h2,h5{
+     /* background-color: bisque; */
+}
+
+    
+    
+    -->
+
+</body>
+</html>
