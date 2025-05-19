@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-query</title>
+
+    <style>
+
+/*  big screen size */
+
+body{
+    background: plum;
+}
+/* 0 - 485px  */
+@media screen and (max-width:486px) {
+    body{
+        background: palegreen;
+    }
+}
+/* min - 486px -  max=> 768px  */
+@media screen and (min-width:486px) and (max-width:768px) {
+     body{
+        background: peru;
+     }
+}
+
+/* min - 769px -  max=> 1024px  */
+@media screen and (min-width:769px) and (max-width:1024px) {
+     body{
+        background: olive;
+     }
+}
+
+    </style>
+</head>
+<body>
+
+<!-- 
+Media query
+==========
+
+@media all screen and (min-width:200px) {
+
+}
+
+
+@media all screen and (max-width:500px) {
+
+}
+
+-->
+    
+</body>
+</html>

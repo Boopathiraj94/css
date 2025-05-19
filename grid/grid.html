@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        /* grid container */
+        section {
+            /* display: flex; */
+
+            border: 2px solid;
+            display: grid;
+            /* width: 400px; */
+
+            /* height: 300px; */
+            /* grid-template-columns: 200px; */
+
+            /* grid-template-columns: 200px 200px 200px 200px; */
+
+            /* grid-template-columns: auto auto auto auto; */
+
+            /* grid-template-columns: 2fr 1fr 3fr 10fr; */
+
+            /* grid-template-columns: 1fr 2fr; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+
+            /* grid-template-columns: repeat(auto-fit, minmax(350px,1fr)); */
+
+            grid-template-columns: repeat(auto-fill,minmax(350px,400px));
+
+            /* grid-template-rows: 200px 300px 100px; */
+            /* grid-template-rows: 5fr 1fr 3fr; */
+
+            /* row-gap: 20px;
+
+            column-gap: 20px; */
+
+            gap: 20px;
+            /* gap:10px 20px; */
+
+            height:auto;
+
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        section div {
+            border: 2px solid rebeccapurple;
+            background: palegoldenrod;
+        }
+
+        section div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .box1 {
+            /* grid-column-start: 1; */
+            /* grid-column-end: 3; */
+            /* grid-column-end: 4; */
+            /* grid-column: 1/3; */
+            /* grid-column: 1/4; */
+
+            /* grid-column: 1 / span 3; */
+            /* grid-column: 1 / -1; */
+        }
+
+        .box2 {
+            /* grid-row-start: 1; */
+            /* grid-row-start: 2; */
+            /* grid-row-end: 4; */
+            /* grid-row-end: 4; */
+
+            /* grid-row: 2/8; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid</h1>
+
+    <!-- 
+     The grid layout module offers a grid based layout system, 
+     with rows & columns
+
+     THe grid layout module make easier to design a responsive layout
+     structure without using float , flex
+
+     Grid components
+     =================
+
+     Grid -container => parent
+     grid - items => child (inside the container)
+
+     fr => fraction
+
+    -->
+
+
+    <section>
+        <div class="box1">
+            <img src="images/1_wbzR91Dii_SN9_GBEKeg1Q.jpg" alt="">
+        </div>
+        <div class="box2"> <img src="images/1_wbzR91Dii_SN9_GBEKeg1Q.jpg" alt=""></div>
+        <div class="box3"> <img src="images/1_wbzR91Dii_SN9_GBEKeg1Q.jpg" alt=""></div>
+        <div class="box4"> <img src="images/1_wbzR91Dii_SN9_GBEKeg1Q.jpg" alt=""></div>
+        <div class="box5"> <img src="images/1_wbzR91Dii_SN9_GBEKeg1Q.jpg" alt=""></div>
+    </section>
+
+
+</body>
+
+</html>
