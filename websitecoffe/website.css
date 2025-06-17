@@ -1,0 +1,175 @@
+:root{
+    --txt-clr:#533b3b91;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    /* border: 2px solid; */
+    height: 50vh;
+    background: url('https://t3.ftcdn.net/jpg/01/43/05/74/360_F_143057403_F3LRurEB8Lgk0hi8Ehpb7ZJOtaAZdIzj.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header{
+   background: #767e7e7d;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px 3%;
+       box-shadow: 2px 6px 13px 3px #4649498f;
+   position: sticky;
+   top: 0;
+
+}
+
+header .logo{
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    background: darkcyan;
+    padding: 5px 8px;
+}
+
+nav a:hover{
+
+}
+
+.para{
+    border: 2px solid;
+   padding: 10px 3%;
+   background: var(--txt-clr);
+   text-align: center;
+}
+
+.product-con{
+    /* border:2px solid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,250px));
+    justify-content: space-between;
+       padding: 10px 3%;
+       margin-top: 15px;
+}
+
+.product-con .pro-box{
+    border: 2px solid red;
+      overflow: hidden;
+      border-radius: 50%;
+}
+
+.product-con .red{
+     border-radius: 5%;
+}
+
+.product-con .pro-box .pro-img{
+    border: 2px solid;
+    height: 250px;
+    position: relative;
+}
+.product-con .pro-box .pro-img a{
+    position: absolute;
+     left: 40%;
+    top: 40%;
+    z-index: 99;
+    transform: translate(-40%,-40%);
+}
+.product-con .pro-box .pro-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-con .pro-box .pro-img a{
+  
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+   
+}
+.product-con .pro-box .pro-img:hover a{
+      background: var(--txt-clr);
+      transition: 1s;
+      opacity: 1;
+      transform: scale(1.2,1.2);
+}
+.product-con .pro-box .pro-img:hover img{
+    transform: scale(1.2,1.2);
+    /* opacity: 0.5; */
+    transition: 2s;
+   
+}
+
+.shop-now{
+    border: 2px solid;
+    margin-top: 20px;
+    /* background: var(--txt-clr); */
+    background: url('https://unocasa.com/cdn/shop/articles/types_of_coffee_91a828a5-7ff3-427d-acaa-c8b7289c9e5a_1024x.jpg?v=1621261041') no-repeat center fixed ;
+    background-size: cover;
+}
+
+.shop-now h1{
+    text-align: center;
+}
+
+.shop-now .header h1::after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    margin: 0 auto;
+    background:darkblue;
+}
+.shop-now .header h1:hover::after{
+     width: 200px;
+     transition: 2s;
+}
+
+/* coffee-con */
+.coffee-con{
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 20px 5%;
+}
+
+.coffee-con .coffee-items{
+    /* border:2px solid green; */
+}
+
+.coffee-con .content{
+    padding: 50px;
+}
+
+.coffee-con .content .heading h1{
+  font-size: 52px;
+  color: brown;
+}
+
+.coffee-con .content .body{
+    margin-top: 10%;
+    font-size: 28px;
+}
+
+.coffee-con .content .footer{
+     margin-top: 10%;
+     text-align: center;
+}
+
+.coffee-con .content .footer a{
+    background: darkgreen;
+    padding: 10px 20px;
+}
